@@ -1,11 +1,13 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
+import Logo from "@/assets/icons/logo.svg";
 
 const Navbar = () => {
     return (
         <header className="bg-gray-400">
             <div className="container mx-auto px-4">
                 <nav className=" p-5">
+                    <img src={Logo.src} alt="logo" />
                     <ul className="flex gap-x-8 items-center">
                         <li>
                             <Link href="/">Home</Link>
