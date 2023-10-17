@@ -6,11 +6,15 @@ const Navbar = () => {
     return (
         <header className="bg-gray-400">
             <div className="container mx-auto px-4">
-                <nav className=" p-5">
+                <nav className=" p-5 flex gap-x-8 ">
                     <img src={Logo.src} alt="logo" />
+
                     <ul className="flex gap-x-8 items-center">
                         <li>
                             <Link href="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link href="/posts">Posts</Link>
                         </li>
                         <li>
                             <Link href="/about">About</Link>
